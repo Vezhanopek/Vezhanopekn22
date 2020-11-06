@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title> <!-- Название страницы -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="media.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <script>
+                    document.write(document.domain)
+                </script>
+            </a>
+            <p class="quote"></p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <img src="" alt="Nature">
+
+            <h1 class="setH1"></h1>
+
+            <p class="main__p price"></p>
+
+            <form class="decor" method="post">
+                <div class="form-inner">
+                    <h3>Modulo d'iscrizione</h3>
+                    <input type="text" name="username" placeholder="Username" maxlength="20" required>
+                    <input type="tel" name="phone" placeholder="Phone" required>
+                    <input type="button" value="Заказать" onclick="go()">
+                </div>
+            </form>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <a href="Privacy_Policy.html">Privacy Policy</a>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        document.getElementsByTagName("h1")[0].innerHTML=sessionStorage.getItem("h1");
+        document.getElementsByTagName("img")[0].src = sessionStorage.getItem("image");
+
+        function go() {
+            window.location.href = 'SuccessPage.html';
+        }
+    </script>
+
+</body>
+
+</html>

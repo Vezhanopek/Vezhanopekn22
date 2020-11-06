@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title> <!-- Название страницы -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="media.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo"><script>document.write(document.domain)</script></a>
+            <p class="quote"></p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Ingrosso ortofrutticolo </h1>
+
+            
+
+            <img src="imaage.jpg" alt="Nature">
+
+            <p class="main__p">Centralfrutta è presente da diversi anni nel mercato della vendita frutta e verdura.
+
+Una passione tramandata di generazione in generazione quella della famiglia Purgatorio che fin dal 1960 si occupa di commercio all' ingrosso di prodotti ortofrutticoli. Sempre attenta alla qualità e all'igiene dei prodotti oggi l'azienda vanta una diversa tipologia di clienti come negozi, ristoranti, bar, mense, complessi alberghieri e sagre paesane.
+
+L'attività di preparazione e smistamento frutta e verdura viene effettuata giornalmente presso il magazzino di Orvieto, dove si hanno a disposizione celle frigo e mezzi per il trasporto e la consegna.
+
+È cura del personale selezionare tutti i prodotti offerti dal mercato nazionale ed estero, al fine di offrire al cliente il miglior rapporto qualità, prezzo, con merce conforme alle attuali normative Haccp.
+
+Per effettuare un ordine, compila il modulo di registrazione. </p>
+
+            <a href="OrderForm.html" class="main__btn">su ordinazione</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <a href="Privacy_Policy.html">Privacy Policy</a>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        var h1 = document.getElementsByTagName("h1")[0].innerHTML;
+        var image = document.getElementsByTagName("img")[0].src;
+        sessionStorage.setItem("h1", h1);
+        sessionStorage.setItem("image", image);
+    </script>
+
+</body>
+</html>
